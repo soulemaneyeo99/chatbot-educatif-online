@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: chatbot-inclusion-numerique
+    env: python
+    plan: free
+    region: frankfurt
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT --workers 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.5
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: false
+      - key: LOG_LEVEL
+        value: INFO
+      - key: OPENAI_MODEL
+        value: gpt-3.5-turbo
+      - key: OPENAI_MAX_TOKENS
+        value: 1000
+      - key: OPENAI_TEMPERATURE
+        value: 0.7

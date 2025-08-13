@@ -151,3 +151,19 @@ wcwidth==0.2.13
 websockets==15.0.1
 whisper==1.1.10
 yarl==1.20.1
+# HTTP et utilitaires
+httpx==0.25.2
+requests==2.31.0
+aiohttp==3.9.0
+# Monitoring système
+psutil==5.9.6
+# Logs et monitoring
+structlog==23.2.0
+colorama==0.4.6
+
+# Utilitaires
+typing-extensions==4.8.0
+python-dateutil==2.8.2
+
+# Performance et JSON
+orjson==3.9.10

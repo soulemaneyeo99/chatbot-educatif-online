@@ -37,3 +37,4 @@ temp/
 .pytest_cache/
 htmlcov/
 .coverage
+runtime.txt

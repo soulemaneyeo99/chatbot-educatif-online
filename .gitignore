@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+venv310/
+.venv
+
+# Environnement
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Données temporaires
+data/vectorstore/
+temp/
+*.tmp
+
+# Tests
+.pytest_cache/
+htmlcov/
+.coverage
